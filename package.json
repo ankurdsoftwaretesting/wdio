@@ -6,7 +6,7 @@
   "scripts": {
     "gen_report": "./node_modules/allure-commandline/dist/bin/allure open",
     "clean": "rm -rf allure-*",
-    "test": "npx wdio run ./wdio-configs/wdio.conf.reg.js --cucumberOpts.tagExpression",
+    "test": "npx wdio run ./wdio-configs/wdio.conf.js --cucumberOpts.tagExpression",
     "test_reg": "npx wdio run ./wdio-configs/wdio.conf.js --cucumberOpts.tagExpression '@regression'",
     "test_san": "npx wdio run ./wdio-configs/wdio.conf.js --cucumberOpts.tagExpression '@sanity'",
     "test_headless": "npx wdio run ./wdio-configs/wdio.conf.reg.js --capabilities[0].chromOptions.args '--headless' --cucumberOpts.tagExpression"
