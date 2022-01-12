@@ -1,7 +1,7 @@
 def execType = ''
 pipeline{
    
-    agent any
+   agent {label 'ad-internal'}
     
     parameters {
         choice(name: 'EXEC_AS', choices: ['sanity', 'regression'], description: '')
